@@ -19,8 +19,7 @@ class Test(unittest.TestCase):
         result = self.app.get('/') 
 
         # verifica o retorno do conteudo da pagina
-        self.assertRegex(result.data.decode(), "Primeiro Deploy GIT - Fabricio Castro"
-
+        self.assertRegex(result.data.decode(), "Primeiro Deploy GIT - Fabricio Castro")
 
 if __name__ == "__main__":
     print ('INICIANDO OS TESTES')
